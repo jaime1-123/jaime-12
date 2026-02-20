@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fazer denuncias</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+    }
+
+    header {
+        background: linear-gradient(to right, #ff9800, #ff5722);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0 15px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: none;
+        height: 90px;
+    }
+
+    button {
+        background-color: #ff5722;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #e4622f;
+    }
+
+    .sucesso {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #d4edda;
+        color: #155724;
+        border-radius: 8px;
+        display: none;
+        text-align: center;
+    }
+
+    .voltar {
+        margin-top: 15px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        margin-right: 550px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <a href="EDM3.html">⬅</a>
+    </div>    Fazer Denúncias
+<img src="EUNICE-removebg-preview.png" alt="" width="7%"> </header>
+
+<div class="container">
+
+    <label>Nome (opcional)</label>
+    <input type="text" id="nome" placeholder="Pode deixar anônimo">
+
+    <label>Bairro</label>
+    <input type="text" id="bairro" placeholder="Digite o bairro">
+
+    <label>Tipo de Denúncia</label>
+    <select id="tipo">
+        <option value="">Selecione</option>
+        <option>Burla financeira</option>
+        <option>Falso técnico</option>
+        <option>Venda ilegal de energia</option>
+        <option>Ligação clandestina</option>
+        <option>Outro problema local</option>
+    </select>
+
+    <label>Descrição do ocorrido</label>
+    <textarea id="descricao" placeholder="Explique detalhadamente o que aconteceu"></textarea>
+
+
+    <button type="submit">Enviar Denúncia</button>
+
+    <div class="sucesso" id="mensagemSucesso">
+        ✅ Denúncia enviada com sucesso!
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>
