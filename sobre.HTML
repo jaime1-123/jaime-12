@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            justify-content: center;
+        }
+
+        /* HEADER */
+       header {
+        background: linear-gradient(to right, #ff9800, #ff5722);
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+
+        
+        
+    }
+
+        /* INPUT DE PESQUISA */
+        .pesquisa-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .pesquisa-container input {
+            width: 50%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        /* RESULTADOS */
+        .resultados {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .campo {
+            width: 40%;
+        }
+
+        .titulo {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .box {
+            background-color: white;
+            height: 200px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        img{
+            height: 50px;
+
+            
+        }
+        
+        
+        .tu{
+            margin-right: 1250px;
+        
+            
+        }
+        .eu{
+            justify-content: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+     <header>
+    <div>
+        <a href="menu.html">⬅</a> 
+</div>
+<h3>  MAPA DE PROBLEMA </h3>
+<img src="EUNICE-removebg-preview.png" alt="" width="7%">
+</header>
+
+    <!-- INPUT DE PESQUISA -->
+    <div class="pesquisa-container">
+        <input type="text" placeholder="Pesquisar bairro...">
+    </div>
+
+    <!-- RESULTADOS -->
+    <div class="resultados">
+
+        <!-- CAMPO ESQUERDO -->
+        <div class="campo">
+            <div class="titulo">Bairro com problemas por resolver</div>
+            <div class="box">
+                <!-- Resultados aparecem aqui -->
+            </div>
+        </div>
+
+        <!-- CAMPO DIREITO -->
+        <div class="campo">
+            <div class="titulo">Bairros com problemas resolvidos</div>
+            <div class="box">
+                <!-- Resultados aparecem aqui -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
