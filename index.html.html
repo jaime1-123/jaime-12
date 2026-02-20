@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energia Alerta</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background:linear-gradient(#ff9800, #ff5722) ;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 22px;
+        font-weight: bold;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0 15px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #e68900;
+    }
+
+    .report-list {
+        margin-top: 20px;
+    }
+
+    .report {
+        background: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .status {
+        font-weight: bold;
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <a href="EDM3.html">⬅</a> 
+</div>
+<h3>  Reportar problema </h3>
+<img src="EUNICE-removebg-preview.png" alt="" width="7%">
+</header>
+
+<div class="container">
+
+    <h3>Reportar problema</h3>
+
+    <label>Nome</label>
+    <input type="text" id="nome">
+
+     <label>Numero de contador</label>
+    <input type="text" id="contador" placeholder="Digite o numero do  contador" maxlength="11" minlength="11" required>
+
+    <label>Confirmar Numero de contador</label>
+    <input type="text" id="contador" placeholder="Digite o numero do  contador" maxlength="11" minlength="11" required>
+
+
+
+    <label>Bairro</label>
+    <input type="text" id="bairro">
+
+   
+
+    <label>Tipo de Problema</label>
+    <select id="tipo">
+        <option>Falta de energia</option>
+        <option>Poste danificado</option>
+        <option>Cabo caído</option>
+        <option>Transformador com problema</option>
+        <option>Curto-circuito</option>
+        <option>Outro</option>
+    </select>
+
+    <label>Descrição</label>
+    <textarea id="descricao"></textarea>
+
+     <label>Foto (opcional)</label>
+    <input type="file" accept="image/*">
+
+    <button>Enviar Denúncia</button>
+
+    
+
+</div>
+
+
+
+</body>
+
+
+</html>
